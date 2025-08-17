@@ -177,7 +177,7 @@ const services = [
       "Mobile number for OTP verification",
     ],
     processingTime: "Depending on service",
-    fees: "₹.. depending on form type",
+    fees: "₹.. depending on type",
     steps: [
       "सभी सरकारी नौकरी फ़ॉर्म",
       "सभी प्राइवेट नौकरी फ़ॉर्म",
@@ -201,7 +201,7 @@ const services = [
       "Mobile number for OTP verification",
     ],
     processingTime: "Depending on service ",
-    fees: "Depending on service",
+    fees: "₹.. depending on type",
     steps: [
       "अपॉइंटमेंट बुक फॉर— न्यू आधार कार्ड, आधार कार्ड सुधार जैस- नाम, पिता/पति नाम, जेंडर, मोबाइल नम्बर, बायोमेट्रिक अपडेट्स।",
       "आधार एड्रेस अपडेट।",
@@ -225,7 +225,7 @@ const services = [
       "Passport size photograph",
     ],
     processingTime: "Depending on service",
-    fees: "Depending on service",
+    fees: "₹.. depending on type",
     steps: [
       "नया पैन कार्ड आवेदन (NSDL / UTIITSL)",
       "पैन कार्ड सुधार (नाम, पिता का नाम, जन्मतिथि, पता, मोबाइल नंबर, फोटो, हस्ताक्षर आदि)",
