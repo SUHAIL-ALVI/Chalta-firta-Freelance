@@ -23,8 +23,11 @@ export function HeroSection({ onExploreClick }: HeroSectionProps) {
   return (
     <section
       id="home"
-      className="relative py-8 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 via-white to-orange-50 min-h-screen flex items-center mt-16"
+      className="relative py-8 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 
+                 bg-gradient-to-br from-blue-50 via-white to-orange-50 
+                 min-h-screen flex items-center mt-16"
     >
+      {/* Background blobs */}
       <div className="absolute inset-0 opacity-10">
         <motion.div
           animate={{ scale: [1, 1.2, 1], rotate: [0, 180, 360] }}
@@ -40,28 +43,36 @@ export function HeroSection({ onExploreClick }: HeroSectionProps) {
 
       <div className="max-w-7xl mx-auto relative w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          
+          {/* IMAGE → On top in mobile, left in desktop */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="flex justify-center lg:justify-start order-2 lg:order-1"
+            className="flex justify-center lg:justify-start order-1 lg:order-1"
           >
-            <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }} className="relative">
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+              className="relative"
+            >
               <img
                 src="/chalta-firta-logo.png"
                 alt="Chalta Firta Jan Seva Kendra Logo"
-                className="w-64 sm:w-80 lg:w-96 h-auto object-contain drop-shadow-2xl"
+                className="w-64 sm:w-80 ml-8 lg:w-96 mb-5 pb-5 h-auto object-contain drop-shadow-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent rounded-lg"></div>
             </motion.div>
           </motion.div>
 
+          {/* CONTENT → Below image on mobile, right side on desktop */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="space-y-6 sm:space-y-8 order-1 lg:order-2 text-center lg:text-left"
+            className="space-y-6 sm:space-y-8 order-2 lg:order-2 text-center lg:text-left"
           >
+            {/* Heading */}
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -69,11 +80,12 @@ export function HeroSection({ onExploreClick }: HeroSectionProps) {
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight"
             >
               {siteData.hero.title}
-              <span className="block bg-gradient-to-r from-blue-600 to-orange-600 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r text-2xl sm:text-4xl from-blue-600 to-orange-600 bg-clip-text text-transparent">
                 {siteData.hero.subtitle}
               </span>
             </motion.h1>
 
+            {/* Description */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -83,6 +95,7 @@ export function HeroSection({ onExploreClick }: HeroSectionProps) {
               {siteData.hero.description}
             </motion.p>
 
+            {/* Buttons */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -107,6 +120,7 @@ export function HeroSection({ onExploreClick }: HeroSectionProps) {
               ))}
             </motion.div>
 
+            {/* Stats */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -116,7 +130,11 @@ export function HeroSection({ onExploreClick }: HeroSectionProps) {
               {siteData.hero.stats.map((stat, index) => {
                 const Icon = statIcons[index]
                 return (
-                  <motion.div key={index} className="text-center" whileHover={{ scale: 1.05 }}>
+                  <motion.div
+                    key={index}
+                    className="text-center"
+                    whileHover={{ scale: 1.05 }}
+                  >
                     <div className="flex justify-center mb-2">
                       <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-blue-100 to-orange-100 rounded-full flex items-center justify-center">
                         <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" />

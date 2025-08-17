@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { MapPin, Phone, Mail, Clock, Facebook, Twitter, Instagram, ExternalLink } from "lucide-react"
+import Image from "next/image"
 
 const quickLinks = [
   { name: "About Us", href: "#about" },
@@ -187,6 +188,59 @@ export function Footer() {
             </div>
           </div>
         </motion.div>
+
+        {/** <section>
+          <Image
+            src="/Logo.png"
+            alt="Footer Image"
+            width={500}
+            height={300}
+            className="mt-8 mx-auto flex justify-center items-center"
+          />
+        </section>*/}
+
+       <footer className="relative w-full overflow-hidden bg-transparent">
+      <motion.section
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="relative z-10 flex flex-col items-center justify-center py-12 sm:py-16 text-center"
+      >
+        {/* Logo */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="mb-10"
+        >
+          <Image
+            src="/Logo.png"
+            alt="Footer Logo"
+            width={220}
+            height={120}
+            className="mx-auto"
+          />
+        </motion.div>
+
+        {/* Large Fading Text */}
+        <motion.h1
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 0.08, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          animate={{ 
+            y: [0, -5, 0], 
+            opacity: [0.08, 0.12, 0.08] 
+          }}
+          
+          className="mt-4 text-[2.5rem] sm:text-[4rem] md:text-[6rem] lg:text-[8rem] font-extrabold tracking-wide text-gray-900 select-none pointer-events-none"
+        >
+          Chalta Firta
+        </motion.h1>
+      </motion.section>
+    </footer>
+        
       </div>
     </footer>
   )

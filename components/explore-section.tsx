@@ -43,9 +43,8 @@ export function ExploreSection({ onClose }: ExploreSectionProps) {
 
           {/* Title Section */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-16">
-            <h1 className="text-5xl font-bold text-gray-900 mb-4">{siteData.explore.title}</h1>
-            <p className="text-xl text-blue-600 mb-6">{siteData.explore.subtitle}</p>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">{siteData.explore.description}</p>
+            <h1 className="text-5xl font-bold text-blue-600 mb-4">{siteData.explore.title}</h1>
+           
           </motion.div>
 
           {/* Content Sections */}
@@ -63,18 +62,21 @@ export function ExploreSection({ onClose }: ExploreSectionProps) {
                     <CardContent className="p-8">
                       <div className="flex items-start space-x-6">
                         <div className="flex-shrink-0">
-                          <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-orange-500 rounded-full flex items-center justify-center">
-                            <Icon className="w-8 h-8 text-white" />
-                          </div>
+                          
                         </div>
                         <div className="flex-1">
-                          <h3 className="text-2xl font-bold text-gray-900 mb-4">{section.title}</h3>
+                          <h3 className="text-2xl font-bold text-orange-600 mb-4">{section.title}</h3>
                           <p className="text-gray-600 leading-relaxed text-lg">{section.content}</p>
+                          
                         </div>
+                        
                       </div>
+                      
                     </CardContent>
                   </Card>
+                  
                 </motion.div>
+                
               )
             })}
           </div>
@@ -88,9 +90,9 @@ export function ExploreSection({ onClose }: ExploreSectionProps) {
           >
             <Card className="bg-gradient-to-r from-blue-600 to-orange-600 text-white">
               <CardContent className="p-12">
-                <h3 className="text-3xl font-bold mb-4">Ready to Get Started?</h3>
+                <h3 className="text-3xl font-bold mb-4">Thanks For Choosing Us</h3>
                 <p className="text-xl mb-8 opacity-90">
-                  Experience the convenience of digital government services today.
+                  चलता फिरता - डिजिटल जन सेवा केंद्र की ओर से धन्यवाद
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button

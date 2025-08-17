@@ -10,6 +10,7 @@ import { ContactSection } from "@/components/contact-section"
 import { ExploreSection } from "@/components/explore-section"
 import { Footer } from "@/components/footer"
 
+
 export default function Home() {
   const [showExplore, setShowExplore] = useState(false)
 
@@ -21,6 +22,7 @@ export default function Home() {
         <ServicesSection />
         <AboutSection />
         <ContactSection />
+        
         <Footer />
       </main>
 

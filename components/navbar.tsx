@@ -26,7 +26,7 @@ export function Navbar() {
             className="flex items-center space-x-3"
           >
             <img src="/chalta-firta-logo.png" alt="Chalta Firta Logo" className="w-10 h-10 object-contain" />
-            <div className="hidden sm:block">
+            <div className="block">
               <h1 className="text-lg font-bold text-gray-900">{siteData.organization.name}</h1>
               <p className="text-xs text-blue-600">{siteData.organization.tagline}</p>
             </div>
@@ -86,15 +86,7 @@ export function Navbar() {
                   {item.name}
                 </motion.a>
               ))}
-              <div className="pt-3 border-t border-gray-200">
-                <Button
-                  size="sm"
-                  className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-full"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Get Started
-                </Button>
-              </div>
+              
             </div>
           </motion.div>
         )}
