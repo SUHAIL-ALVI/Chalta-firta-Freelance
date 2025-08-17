@@ -15,12 +15,12 @@ export const siteData = {
   ],
   hero: {
     title: "Chalta Firta",
-    subtitle: "Jan Seva Digital Kendra",
+    subtitle: "Digital Jan Seva Kendra",
     description:
       "Chalta Firta – Digital Jan Seva Kendra is an authorized service center approved by CSC (Common Service Center). Our responsibility is to operate this Chalta Firta – Digital Jan Seva Kendra smoothly, and we are CSC VLEs officially approved by CSC.",
     buttons: [
-      { text: "Explore Services", variant: "primary", href: "#explore" },
-      { text: "Contact Us", variant: "outline", href: "#contact" },
+      { text: "हमारे बारे में", variant: "primary", href: "#explore" },
+      { text: "CSE बारे में", variant: "outline", href: "#contact" },
     ],
     stats: [
       { label: "Citizens Served", value: "7000+" },

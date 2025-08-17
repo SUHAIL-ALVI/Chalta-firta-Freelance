@@ -121,31 +121,7 @@ export function HeroSection({ onExploreClick }: HeroSectionProps) {
             </motion.div>
 
             {/* Stats */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.6 }}
-              className="grid grid-cols-3 gap-4 sm:gap-8 pt-8 border-t border-gray-200"
-            >
-              {siteData.hero.stats.map((stat, index) => {
-                const Icon = statIcons[index]
-                return (
-                  <motion.div
-                    key={index}
-                    className="text-center"
-                    whileHover={{ scale: 1.05 }}
-                  >
-                    <div className="flex justify-center mb-2">
-                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-blue-100 to-orange-100 rounded-full flex items-center justify-center">
-                        <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" />
-                      </div>
-                    </div>
-                    <div className="text-xl sm:text-2xl font-bold text-gray-900">{stat.value}</div>
-                    <div className="text-sm sm:text-base text-gray-600">{stat.label}</div>
-                  </motion.div>
-                )
-              })}
-            </motion.div>
+            
           </motion.div>
         </div>
       </div>

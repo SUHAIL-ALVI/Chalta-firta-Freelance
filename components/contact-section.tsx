@@ -4,10 +4,7 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { MapPin, Phone, Mail, Clock, Send, FileText } from "lucide-react"
 import { siteData } from "@/lib/data"
-import AssociatedCompaniesMarquee from "@/app/Services/page"
 
-import BlogStories from "@/app/whyus/page"
-import WhatWeProvide from "@/app/whatwe/page"
 
 export function ContactSection() {
   return (
@@ -95,9 +92,8 @@ export function ContactSection() {
         </motion.div>
 
         {/* Extra Components */}
-        <WhatWeProvide />
-        <BlogStories />
-       <AssociatedCompaniesMarquee/>
+        
+      
       
       </div>
          

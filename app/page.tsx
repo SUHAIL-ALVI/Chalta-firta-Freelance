@@ -5,10 +5,11 @@ import { AnimatePresence } from "framer-motion"
 import { Navbar } from "@/components/navbar"
 import { HeroSection } from "@/components/hero-section"
 import { ServicesSection } from "@/components/services-section"
-import { AboutSection } from "@/components/about-section"
+
 import { ContactSection } from "@/components/contact-section"
 import { ExploreSection } from "@/components/explore-section"
 import { Footer } from "@/components/footer"
+import AssociatedCompanies from "./Services/page"
 
 
 export default function Home() {
@@ -20,9 +21,8 @@ export default function Home() {
       <main className="min-h-screen">
         <HeroSection onExploreClick={() => setShowExplore(true)} />
         <ServicesSection />
-        <AboutSection />
-        <ContactSection />
-        
+       <AssociatedCompanies />
+        <ContactSection />      
         <Footer />
       </main>
 
