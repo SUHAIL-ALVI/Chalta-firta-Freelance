@@ -5,12 +5,21 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const companies = [
-  { name: "Google", logo: "https://logo.clearbit.com/google.com" },
-  { name: "Microsoft", logo: "https://logo.clearbit.com/microsoft.com" },
-  { name: "Amazon", logo: "https://logo.clearbit.com/amazon.com" },
-  { name: "Netflix", logo: "https://logo.clearbit.com/netflix.com" },
-  { name: "Meta", logo: "https://logo.clearbit.com/meta.com" },
-  { name: "Apple", logo: "https://logo.clearbit.com/apple.com" },
+  { name: "Nios", logo: "/one.png" },
+  { name: "HDFC", logo: "/two.png" },
+  { name: "Sarkari Pariksha", logo: "/three.png" },
+  { name: "Electicity Bill", logo: "/four.png" },
+  { name: "CSC e Store", logo: "/five.png" },
+  { name: "AXIS BANK", logo: "/six.png" },
+  { name: "Star", logo: "/seven.png" },
+  { name: "PM Kisaan", logo: "/eight.png" },
+  { name: "NIELIT", logo: "/nine.png" },
+  { name: "CSC", logo: "/ten.png" },
+  { name: "IRCTC", logo: "/eleven.png" },
+  { name: "Loan Bazar", logo: "/twelth.png" },
+  { name: "e-Distt, UP", logo: "/thirtteen.png" },
+  { name: "Aadhar", logo: "fourteen.png" },
+  { name: "UTIITSL", logo: "/fifteen.png" },
 ];
 
 export default function AssociatedCompanies() {
