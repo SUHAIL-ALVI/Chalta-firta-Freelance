@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Users, Award, Clock } from "lucide-react"
 import { siteData } from "@/lib/data"
+import Link from "next/link"
 
 const statIcons = [Users, Award, Clock]
 
@@ -25,7 +26,7 @@ export function HeroSection({ onExploreClick }: HeroSectionProps) {
       id="home"
       className="relative py-8 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 
                  bg-gradient-to-br from-blue-50 via-white to-orange-50 
-                 min-h-screen flex items-center mt-16"
+                 min-h-screen flex items-center mt-10"
     >
       {/* Background blobs */}
       <div className="absolute inset-0 opacity-10">
@@ -80,7 +81,7 @@ export function HeroSection({ onExploreClick }: HeroSectionProps) {
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight"
             >
               {siteData.hero.title}
-              <span className="block bg-gradient-to-r text-2xl sm:text-4xl from-blue-600 to-orange-600 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r text-xl sm:text-3xl from-blue-600 to-orange-600 bg-clip-text text-transparent">
                 {siteData.hero.subtitle}
               </span>
             </motion.h1>
@@ -96,29 +97,42 @@ export function HeroSection({ onExploreClick }: HeroSectionProps) {
             </motion.p>
 
             {/* Buttons */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.6 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
-            >
-              {siteData.hero.buttons.map((button, index) => (
-                <Button
-                  key={index}
-                  size="lg"
-                  variant={button.variant === "primary" ? "default" : "outline"}
-                  onClick={() => handleButtonClick(button.href, button.text)}
-                  className={
-                    button.variant === "primary"
-                      ? "bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
-                      : "border-2 border-orange-500 text-orange-600 hover:bg-orange-50 px-8 py-4 rounded-xl transition-all duration-300 bg-transparent"
-                  }
-                >
-                  {button.text}
-                  {button.variant === "primary" && <ArrowRight className="ml-2 w-5 h-5" />}
-                </Button>
-              ))}
-            </motion.div>
+            {/* Buttons */}
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.4, duration: 0.6 }}
+  className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-6"
+>
+  {/* Primary Button */}
+  <Link href="/csc">
+    <motion.button
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-blue-700 
+                 hover:from-blue-700 hover:to-blue-800 text-white 
+                 px-8 py-2 rounded-xl shadow-lg hover:shadow-2xl 
+                 transition-all duration-300 font-medium"
+    >
+      हमारे बारे में
+    </motion.button>
+  </Link>
+
+  {/* Secondary Button */}
+  <Link href="/whyus">
+    <motion.button
+      whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 237, 213, 0.4)" }} // light orange bg
+      whileTap={{ scale: 0.95 }}
+      className="w-full sm:w-auto border-2 border-orange-500 
+                 text-orange-600 hover:bg-orange-50 
+                 px-9 py-2 rounded-xl transition-all 
+                 duration-300 font-bold bg-transparent"
+    >
+      हमें क्यों चुनें?
+    </motion.button>
+  </Link>
+</motion.div>
+
 
             {/* Stats */}
             

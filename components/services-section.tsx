@@ -164,144 +164,80 @@ import { ServiceModal } from "./service-modal"
 const services = [
   {
     icon: FileText, // Use appropriate icon
-    title: "All Types Form Filling Services",
-    description: "We assist in filling various government and private forms efficiently.",
+    title: "All Types Forms Filling Services",
+    description: "सरकारी योजनाओं, सरकारी-निजी नौकरी फ़ॉर्म तथा शैक्षणिक फ़ॉर्म से जुड़ी तेज़ और भरोसेमंद सेवाएँ।”",
     href: "#form-filling",
     image: "/All Services.png",
     details:
-      "Our team helps citizens accurately fill forms for government schemes, certificates, and other services. We ensure correctness to avoid delays or rejection.",
-    requirements: [
-      "Relevant documents for the specific form",
-      "Valid photo ID",
+      "सरकारी योजनाओं, सरकारी-निजी नौकरी फ़ॉर्म तथा शैक्षणिक फ़ॉर्म से जुड़ी तेज़ और भरोसेमंद सेवाएँ।”",
+     requirements: [
+      "Valid photo ID (Passport/Voter ID/Driving License)",
       "Address proof",
-      "Passport size photographs (if required)",
+      "Passport size photographs (2 copies)",
+      "Mobile number for OTP verification",
     ],
-    processingTime: "1-5 working days",
-    fees: "₹50 - ₹200 depending on form type",
+    processingTime: "Depending on service",
+    fees: "₹.. depending on form type",
     steps: [
-      "Collect required documents from the citizen",
-      "Fill the form accurately",
-      "Verify details with citizen",
-      "Submit to respective office or portal",
-      "Provide confirmation or acknowledgment",
+      "सभी सरकारी नौकरी फ़ॉर्म",
+      "सभी प्राइवेट नौकरी फ़ॉर्म",
+      "सभी ऑफ़लाइन सरकारी एवं प्राइवेट नौकरी फ़ॉर्म",
+      "सभी स्कूल, संस्थान, कॉलेज एवं विश्वविद्यालय प्रवेश एवं पंजीकरण फ़ॉर्म",
+      "अन्य सभी प्रकार के ऑनलाइन/ऑफ़लाइन फ़ॉर्म",
     ],
   },
   {
     icon: Users, // Use suitable icon
     title: "Aadhaar Services",
-    description: "Aadhaar enrollment, update, and linking services.",
+    description: "“नया आधार, सुधार, प्रिंट एवं अन्य आधार संबंधी सेवाएँ तेज़ और भरोसेमंद तरीके से।”",
     href: "#aadhaar",
     image: "/Aadhar.png",
     details:
-      "Complete Aadhaar services including new enrollment, updates, corrections, and linking with other government services. Our trained staff ensures smooth processing.",
+      "“नया आधार, सुधार, प्रिंट एवं अन्य आधार संबंधी सेवाएँ तेज़ और भरोसेमंद तरीके से।”",
     requirements: [
       "Valid photo ID (Passport/Voter ID/Driving License)",
       "Address proof",
       "Passport size photographs (2 copies)",
       "Mobile number for OTP verification",
     ],
-    processingTime: "1-15 days",
-    fees: "Free / Government Prescribed",
+    processingTime: "Depending on service ",
+    fees: "Depending on service",
     steps: [
-      "Submit Aadhaar application or update request",
-      "Verification of documents",
-      "Biometric data capture (fingerprints & photo)",
-      "Processing at UIDAI office",
-      "Receive Aadhaar update/enrollment confirmation",
+      "अपॉइंटमेंट बुक फॉर— न्यू आधार कार्ड, आधार कार्ड सुधार जैस- नाम, पिता/पति नाम, जेंडर, मोबाइल नम्बर, बायोमेट्रिक अपडेट्स।",
+      "आधार एड्रेस अपडेट।",
+      "आधार कार्ड प्रिन्ट।",
+      "आधार PVC कार्ड।",
+      "आदि अन्य सेवाएं।",
     ],
   },
   {
     icon: CreditCard, // Use suitable icon
     title: "PAN Card Services",
-    description: "Application and correction services for PAN card.",
+    description: "“नया पैन कार्ड, सुधार एवं पुनः प्रिंट जैसी सभी सेवाएँ सरल और भरोसेमंद तरीके से।”",
     href: "#pan-card",
     image: "/pencard.png",
     details:
-      "Apply for a new PAN card or update details like name, address, and date of birth. We ensure forms are correctly submitted to avoid delays.",
+      "“नया पैन कार्ड, सुधार एवं पुनः प्रिंट जैसी सभी सेवाएँ सरल और भरोसेमंद तरीके से।”",
     requirements: [
       "Identity proof",
       "Address proof",
       "Date of birth proof",
       "Passport size photograph",
     ],
-    processingTime: "7-15 working days",
-    fees: "₹110 - ₹120",
+    processingTime: "Depending on service",
+    fees: "Depending on service",
     steps: [
-      "Collect required documents",
-      "Fill PAN card application",
-      "Verify details with citizen",
-      "Submit to NSDL/TIN portal",
-      "Receive PAN card confirmation or dispatch",
+      "नया पैन कार्ड आवेदन (NSDL / UTIITSL)",
+      "पैन कार्ड सुधार (नाम, पिता का नाम, जन्मतिथि, पता, मोबाइल नंबर, फोटो, हस्ताक्षर आदि)",
+      "पैन कार्ड रीप्रिंट / पुनः प्रिंट",
+      "ई-पैन डाउनलोड सेवा",
+      "आधार से पैन कार्ड लिंक करना",
+      "पैन कार्ड स्थिति (Status) चेक सेवा",
+      "पैन कार्ड गुम हो जाने पर पुनः जारी सेवा",
+      "* पैन कार्ड से संबंधित अन्य सभी सेवाएँ",
     ],
   },
-  {
-    icon: Shield, // Use suitable icon
-    title: "Utilities Services",
-    description: "Electricity, water, and other utility bill submissions.",
-    href: "#utilities",
-    image: "/waterE.png",
-    details:
-      "We help citizens submit utility bills for payment or record-keeping. Services include electricity, water, gas, and other municipal utilities.",
-    requirements: [
-      "Bill copy",
-      "Customer ID or account number",
-      "Valid photo ID (if required)",
-    ],
-    processingTime: "Instant - 3 days",
-    fees: "Free / No charge for submission",
-    steps: [
-      "Collect bill and details",
-      "Verify customer information",
-      "Submit bill to respective utility provider",
-      "Provide acknowledgment to citizen",
-    ],
-  },
-  {
-    icon: Phone, // Use suitable icon
-    title: "Financial and Loan Services",
-    description: "Banking, loan applications, insurance, and financial aid assistance.",
-    href: "#financial",
-    image: "/Loan.png",
-    details:
-      "We assist citizens with bank account openings, loan applications, insurance policies, and government financial schemes.",
-    requirements: [
-      "Identity and address proof",
-      "Income proof (if applicable)",
-      "Bank account details",
-      "Nominee details (if required)",
-    ],
-    processingTime: "7-21 days",
-    fees: "₹100 - ₹500 depending on service",
-    steps: [
-      "Consultation for suitable financial product",
-      "Document collection and verification",
-      "Application submission",
-      "Follow-up and status updates until approval",
-    ],
-  },
-  {
-    icon: MapPin, // Use suitable icon
-    title: "Educational Services",
-    description: "School/college admissions, scholarship applications, and certificate verifications.",
-    href: "#education",
-    image: "/education.png",
-    details:
-      "We provide assistance in educational services like admission forms, scholarship applications, mark sheet verification, and other education-related documentation.",
-    requirements: [
-      "Identity proof",
-      "Educational certificates",
-      "Admission or scholarship forms",
-      "Passport size photographs",
-    ],
-    processingTime: "3-30 days",
-    fees: "₹50 - ₹300 depending on service",
-    steps: [
-      "Collect required documents",
-      "Fill application/registration forms",
-      "Verify and submit forms to the institution or authority",
-      "Provide confirmation or tracking ID to citizen",
-    ],
-  },
+  
 ];
 
 

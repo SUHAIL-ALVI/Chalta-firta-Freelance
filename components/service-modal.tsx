@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
 import { Clock, FileText, CheckCircle, Phone } from "lucide-react"
+import Link from "next/link"
 
 interface ServiceModalProps {
   isOpen: boolean
@@ -80,7 +81,7 @@ export function ServiceModal({ isOpen, onClose, service }: ServiceModalProps) {
                 <p className="text-gray-600 leading-relaxed">{service.details}</p>
               </div>
 
-              {/* Requirements */}
+              {/* Requirements
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">Required Documents</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
@@ -91,11 +92,12 @@ export function ServiceModal({ isOpen, onClose, service }: ServiceModalProps) {
                     </div>
                   ))}
                 </div>
-              </div>
+              </div> */}
+              
 
               {/* Process Steps */}
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">Process Steps</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">सेवाओं की श्रेणियाँ</h3>
                 <div className="space-y-3">
                   {service.steps.map((step, index) => (
                     <div key={index} className="flex items-start space-x-3">
@@ -110,10 +112,13 @@ export function ServiceModal({ isOpen, onClose, service }: ServiceModalProps) {
 
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row gap-3 pt-4 border-t border-gray-200">
-                <Button className="flex-1 bg-blue-600 hover:bg-blue-700 text-white">Apply for Service</Button>
-                <Button variant="outline" className="flex-1 border-gray-300 bg-transparent">
-                  Download Form
-                </Button>
+                <Link
+                href="/whatsup"
+                >
+                 <Button className="flex-1 bg-blue-600 hover:bg-blue-700 text-white">और अधिक सेवाओं के बारे में जाने के लिए सम्पर्क करे 🕻</Button>
+                </Link>
+               
+                
                 <Button variant="outline" onClick={onClose}>
                   Close
                 </Button>

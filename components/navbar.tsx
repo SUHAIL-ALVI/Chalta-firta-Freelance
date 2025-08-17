@@ -27,8 +27,9 @@ export function Navbar() {
           >
             <img src="/chalta-firta-logo.png" alt="Chalta Firta Logo" className="w-10 h-10 object-contain" />
             <div className="block">
-              <h1 className="text-lg font-bold text-gray-900">{siteData.organization.name}</h1>
-              <p className="text-xs text-blue-600">{siteData.organization.tagline}</p>
+              <h1 className="text-lg font-boldtext-4xl font-extrabold text-transparent bg-clip-text
+           bg-gradient-to-r from-[#F37321] via-[#FF7C45] to-[#3B6BB0]">{siteData.organization.name}</h1>
+              
             </div>
           </motion.div></Link>
          

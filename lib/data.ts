@@ -1,26 +1,28 @@
 export const siteData = {
   organization: {
-    name: "Chalta Firta",
-    tagline: "Your Trusted Neighbourhood Kiosk",
+    name: "Your Trusted Neighbourhood Kiosk",
+   
     description:
       "Chalta Firta – Digital Jan Seva Kendra is a CSC-approved service center, officially operated by us as authorized CSC VLEs to ensure smooth service delivery.",
   },
   navigation: [
     { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Why Us", href: "/whyus" },
-    { name: "What we Provide", href: "/whatwe" },    
-    { name: "Services", href: "/Services" },
-    { name: "Contact", href: "#contact" },
+    { name: "About", href: "csc" },
+    { name: "Why Choose Us", href: "/whyus" },
+
+    { name: "We Are connected with", href: "/Connect" }, 
+    { name: "Contact", href: "/whatsup" },   
+  
+    
   ],
   hero: {
     title: "Chalta Firta",
     subtitle: "Digital Jan Seva Kendra",
     description:
       "Chalta Firta – Digital Jan Seva Kendra is an authorized service center approved by CSC (Common Service Center). Our responsibility is to operate this Chalta Firta – Digital Jan Seva Kendra smoothly, and we are CSC VLEs officially approved by CSC.",
-    buttons: [
-      { text: "हमारे बारे में", variant: "primary", href: "#explore" },
-      { text: "CSE बारे में", variant: "outline", href: "#contact" },
+  buttons: [
+      { text: "Explore Services", variant: "primary", href: "#explore" },
+      { text: "Contact Us", variant: "outline", href: "#contact" },
     ],
     stats: [
       { label: "Citizens Served", value: "7000+" },

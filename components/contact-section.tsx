@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { MapPin, Phone, Mail, Clock, Send, FileText } from "lucide-react"
 import { siteData } from "@/lib/data"
+import FooterSection from "./Sub-about"
 
 
 export function ContactSection() {
@@ -93,7 +94,7 @@ export function ContactSection() {
 
         {/* Extra Components */}
         
-      
+     
       
       </div>
          

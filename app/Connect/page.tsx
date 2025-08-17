@@ -1,5 +1,6 @@
 "use client";
 
+import FooterSection from "@/components/Sub-about";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -14,14 +15,14 @@ const companies = [
 
 export default function AssociatedCompanies() {
   return (
-    <section className="relative w-full bg-transparent py-8 md:py-12">
+    <section className="relative w-full min-h-screen justify-center content-center bg-blue-50  py-8 md:py-12">
       {/* Title */}
       <div className="text-center mb-8 md:mb-10 px-4">
         <h2 className="text-2xl md:text-4xl font-bold tracking-tight">
-          Companies Associated With Us
+          We Are Connected With
         </h2>
         <p className="text-gray-500 mt-2 text-sm md:text-base">
-          Trusted by industry-leading companies worldwide
+          Trusted Companies In India
         </p>
       </div>
 
@@ -53,6 +54,7 @@ export default function AssociatedCompanies() {
           ))}
         </motion.div>
       </div>
+      <FooterSection />
     </section>
   );
 }

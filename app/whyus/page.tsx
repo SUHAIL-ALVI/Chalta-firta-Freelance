@@ -1,5 +1,6 @@
 "use client";
 
+import FooterSection from "@/components/Sub-about";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -98,6 +99,7 @@ export default function BlogStories() {
           </motion.div>
         ))}
       </div>
+      <FooterSection />
     </section>
   );
 }

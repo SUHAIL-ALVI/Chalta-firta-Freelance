@@ -1,5 +1,6 @@
 "use client";
 
+import FooterSection from "@/components/Sub-about";
 import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
 
@@ -43,6 +44,7 @@ export default function WhatWeProvide() {
           </motion.div>
         ))}
       </div>
+      <FooterSection />
     </section>
   );
 }

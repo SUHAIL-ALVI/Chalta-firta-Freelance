@@ -170,23 +170,7 @@ export function Footer() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="border-t border-border mt-12 pt-8"
         >
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-muted-foreground text-sm">© 2024 Chalta Firta - Jan Seva Kendra. All rights reserved.</p>
-            <div className="flex space-x-6 text-sm">
-              <a href="#privacy" className="text-muted-foreground hover:text-primary transition-colors duration-300">
-                Privacy Policy
-              </a>
-              <a href="#terms" className="text-muted-foreground hover:text-primary transition-colors duration-300">
-                Terms of Service
-              </a>
-              <a
-                href="#accessibility"
-                className="text-muted-foreground hover:text-primary transition-colors duration-300"
-              >
-                Accessibility
-              </a>
-            </div>
-          </div>
+          
         </motion.div>
 
         {/** <section>
@@ -199,7 +183,9 @@ export function Footer() {
           />
         </section>*/}
 
-       <footer className="relative w-full overflow-hidden bg-transparent">
+        {/**Chalta firta image text start */}
+
+       <section className="relative w-full overflow-hidden bg-transparent">
       <motion.section
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -217,8 +203,8 @@ export function Footer() {
           <Image
             src="/Logo.png"
             alt="Footer Logo"
-            width={220}
-            height={120}
+            width={300}
+            height={250}
             className="mx-auto"
           />
         </motion.div>
@@ -239,7 +225,28 @@ export function Footer() {
           Chalta Firta
         </motion.h1>
       </motion.section>
-    </footer>
+    </section>
+
+    {/** footerrrr */}
+
+
+    <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p className="text-muted-foreground text-sm">© 2025 Chalta Firta - Jan Seva Kendra. All rights reserved.</p>
+            <div className="flex space-x-6 text-sm">
+              <a href="#privacy" className="text-muted-foreground hover:text-primary transition-colors duration-300">
+                Privacy Policy
+              </a>
+              <a href="#terms" className="text-muted-foreground hover:text-primary transition-colors duration-300">
+                Terms of Service
+              </a>
+              <a
+                href="#accessibility"
+                className="text-muted-foreground hover:text-primary transition-colors duration-300"
+              >
+                Accessibility
+              </a>
+            </div>
+          </div>
         
       </div>
     </footer>
