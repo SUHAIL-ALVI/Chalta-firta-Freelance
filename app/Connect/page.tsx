@@ -63,7 +63,7 @@ export default function AssociatedCompanies() {
           ))}
         </motion.div>
       </div>
-      <FooterSection />
+      
     </section>
   );
 }
