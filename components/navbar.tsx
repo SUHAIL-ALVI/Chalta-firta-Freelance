@@ -54,9 +54,9 @@ export function Navbar() {
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <Button variant="ghost" size="sm" onClick={toggleMenu} className="p-2">
+            <Button variant="ghost" size="sm" onClick={toggleMenu} className="p-2 ">
               <motion.div animate={{ rotate: isOpen ? 180 : 0 }} transition={{ duration: 0.3 }}>
-                {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6 " />}
               </motion.div>
             </Button>
           </div>
@@ -71,7 +71,7 @@ export function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-white border-t border-gray-200"
+            className="md:hidden bg-white border-t border-gray-200 flex justify-center items-center rounded-b-lg"
           >
             <div className="px-4 py-4 space-y-3">
               {siteData.navigation.map((item, index) => (
