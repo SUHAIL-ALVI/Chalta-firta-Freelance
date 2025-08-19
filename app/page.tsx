@@ -10,6 +10,7 @@ import { ExploreSection } from "@/components/explore-section"
 import { Footer } from "@/components/footer"
 import AssociatedCompanies from "./Connect/page"
 import WeAreConnect from "@/components/We-are-connect"
+import FooterSection from "@/components/Sub-about"
 
 
 
@@ -25,6 +26,7 @@ export default function Home() {
         <WeAreConnect />
         <ContactSection />      
         <Footer />
+        <FooterSection />
        
       </main>
 
