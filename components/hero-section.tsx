@@ -49,11 +49,11 @@ export function HeroSection({ onExploreClick }: HeroSectionProps) {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.5 }}
             className="flex justify-center lg:justify-start order-1 lg:order-1"
           >
             <motion.div
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 0.95 }}
               transition={{ duration: 0.3 }}
               className="relative"
             >
@@ -77,7 +77,7 @@ export function HeroSection({ onExploreClick }: HeroSectionProps) {
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2, duration: 0.6 }}
+              transition={{ delay: 0.1, duration: 0.5 }}
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight"
             >
               {siteData.hero.title}
@@ -90,7 +90,7 @@ export function HeroSection({ onExploreClick }: HeroSectionProps) {
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.6 }}
+              transition={{ delay: 0.2, duration: 0.5 }}
               className="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto lg:mx-0"
             >
               {siteData.hero.description}
@@ -101,7 +101,7 @@ export function HeroSection({ onExploreClick }: HeroSectionProps) {
 <motion.div
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 0.4, duration: 0.6 }}
+  transition={{ delay: 0.3, duration: 0.5 }}
   className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-6"
 >
   {/* Primary Button */}

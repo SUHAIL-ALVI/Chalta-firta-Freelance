@@ -20,7 +20,7 @@ export function Footer() {
   return (
     <footer className="relative  bg-gradient-to-b from-[#F37321] via-[#FF7C45] to-[#3B6BB0] text-gray-100">
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#F37321] via-[#FF7C45] to-[#3B6BB0] pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to- from-[#F37321] via-[#FF7C45] to-[#3B6BB0] pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
