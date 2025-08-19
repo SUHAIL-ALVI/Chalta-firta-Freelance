@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Aadhar Services",
+    "description": "Get your Aadhaar related services done quickly.",
+    "icon": "IdCard",
+    "image": "https://res.cloudinary.com/demo/image/upload/sample.jpg"
+  },
+  {
+    "title": "Pan Card Services",
+    "description": "Easy PAN card application and updates.",
+    "icon": "CreditCard",
+    "image": "https://res.cloudinary.com/demo/image/upload/sample.jpg"
+  }
+]
