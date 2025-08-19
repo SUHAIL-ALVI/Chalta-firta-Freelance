@@ -26,7 +26,7 @@ export default function FooterSection() {
             alt="Footer Logo"
             width={300}
             height={250}
-            className="mx-auto"
+            className="mx-auto ml-10"
           />
         </motion.div>
 
@@ -47,7 +47,7 @@ export default function FooterSection() {
       </motion.section>
 
       {/* Footer */}
-      <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 px-6 py-6 border-t border-gray-200">
+      <div className="hidden lg:flex flex-col lg:flex-row justify-between items-center px-6 py-6 border-t border-gray-200">
         <p className="text-muted-foreground text-sm">
           © 2025 Chalta Firta - Jan Seva Kendra. All rights reserved.
         </p>
