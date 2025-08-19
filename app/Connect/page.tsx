@@ -11,10 +11,10 @@ const companies = [
   { name: "Electicity Bill", logo: "/four.png" },
   { name: "CSC e Store", logo: "/five.png" },
   { name: "AXIS BANK", logo: "/six.png" },
-  { name: "Star", logo: "/seven.png" },
+  { name: "Star Health Insurence", logo: "/seven.png" },
   { name: "PM Kisaan", logo: "/eight.png" },
   { name: "NIELIT", logo: "/nine.png" },
-  { name: "CSC", logo: "/ten.png" },
+  { name: "CSC Academy", logo: "/ten.png" },
   { name: "IRCTC", logo: "/eleven.png" },
   { name: "Loan Bazar", logo: "/twelth.png" },
   { name: "e-Distt, UP", logo: "/thirtteen.png" },
@@ -31,7 +31,7 @@ export default function AssociatedCompanies() {
           We Are Connected With
         </h2>
         <p className="text-gray-500 mt-2 text-sm md:text-base">
-          Trusted Companies In India
+          Trusted Depratment in India
         </p>
       </div>
 

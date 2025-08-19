@@ -70,7 +70,7 @@ export function ServiceModal({ isOpen, onClose, service }: ServiceModalProps) {
                   <Phone className="w-5 h-5 text-purple-600" />
                   <div>
                     <div className="text-sm font-medium text-gray-900">Support</div>
-                    <div className="text-sm text-gray-600">24/7 Available</div>
+                    <div className="text-sm text-gray-600">8AM to 11PM</div>
                   </div>
                 </div>
               </div>

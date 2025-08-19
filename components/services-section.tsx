@@ -361,7 +361,7 @@ export function ServicesSection() {
                         className="w-full group-hover:gradient-bg-primary group-hover:text-white group-hover:border-blue-600 transition-all duration-300 bg-transparent border-2 border-gray-300 text-gray-700 hover:shadow-lg py-3 rounded-xl font-medium"
                         onClick={() => handleLearnMore(service)}
                       >
-                        Learn More
+                        Know More
                       </Button>
                     </motion.div>
                   </CardContent>

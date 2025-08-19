@@ -6,8 +6,8 @@ export const siteData = {
       "Chalta Firta – Digital Jan Seva Kendra is a CSC-approved service center, officially operated by us as authorized CSC VLEs to ensure smooth service delivery.",
   },
   navigation: [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "csc" },
+    { name: "Home", href: "/" },
+    { name: "About", href: "/csc" },
     { name: "Why Choose Us", href: "/whyus" },
 
     { name: "We Are connected with", href: "/Connect" }, 

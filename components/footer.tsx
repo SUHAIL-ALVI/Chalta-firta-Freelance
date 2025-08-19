@@ -6,18 +6,13 @@ import { MapPin, Phone, Mail, Clock, Facebook, Twitter, Instagram, ExternalLink 
 import Image from "next/image"
 
 const quickLinks = [
-  { name: "About Us", href: "#about" },
-  { name: "Services", href: "#services" },
-  { name: "Contact", href: "#contact" },
+  { name: "About Us", href: "/csc" },
+  { name: "Services", href: "/Connect" },
+  { name: "Contact", href: "/whatsup" },
 
 ]
 
-const services = [
-  { name: "Document Services", href: "#documents" },
-  { name: "Citizen Registration", href: "#registration" },
-  { name: "Financial Services", href: "#financial" },
-  { name: "Government Schemes", href: "#schemes" },
-]
+
 
 const socialLinks = [
   { icon: Facebook, href: "#", label: "Facebook" },
@@ -40,7 +35,7 @@ export function Footer() {
           >
             <div className="mb-6">
               <h3 className="text-2xl font-bold text-foreground mb-2">Chalta Firta</h3>
-              <p className="text-primary font-medium text-lg mb-4">Jan Seva Kendra</p>
+              <p className="text-primary font-medium text-lg mb-4">Digital Jan Seva Kendra</p>
               <p className="text-muted-foreground leading-relaxed">
                 Dedicated to serving the community with transparent, efficient, and accessible public services for all
                 citizens.
@@ -89,27 +84,7 @@ export function Footer() {
           </motion.div>
 
           {/* Services */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <h4 className="text-lg font-semibold text-foreground mb-6">Our Services</h4>
-            <ul className="space-y-3">
-              {services.map((service, index) => (
-                <li key={index}>
-                  <a
-                    href={service.href}
-                    className="text-muted-foreground hover:text-primary transition-colors duration-300 flex items-center group"
-                  >
-                    <ExternalLink className="w-3 h-3 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    {service.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
+         
 
           {/* Contact Info */}
           <motion.div
@@ -126,9 +101,9 @@ export function Footer() {
                   <p className="text-muted-foreground">
                    Pillar No 88 Chandi Mandir Chauraha Delhi Garh Road  
                     <br />
-                   Pilkhuwa Hapur Uttar Pradesh
-                    <br />
-                   UttarPradesh India
+                   Pilkhuwa Hapur Uttar Pradesh (245304)
+                    
+                  
                   </p>
                 </div>
               </div>
@@ -150,11 +125,10 @@ export function Footer() {
                 <Clock className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-muted-foreground">
-                    Mon - Fri: 9:00 AM - 6:00 PM
+                   AllDays
                     <br />
-                    Sat: 9:00 AM - 2:00 PM
-                    <br />
-                    Sun: Closed
+                    8:00 AM - 11:00 PM
+                    
                   </p>
                 </div>
               </div>
