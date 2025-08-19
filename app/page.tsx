@@ -9,6 +9,7 @@ import { ContactSection } from "@/components/contact-section"
 import { ExploreSection } from "@/components/explore-section"
 import { Footer } from "@/components/footer"
 import AssociatedCompanies from "./Connect/page"
+import WeAreConnect from "@/components/We-are-connect"
 
 
 
@@ -21,7 +22,7 @@ export default function Home() {
       <main className="min-h-screen">
         <HeroSection onExploreClick={() => setShowExplore(true)} />
         <ServicesSection />
-        <AssociatedCompanies />
+        <WeAreConnect />
         <ContactSection />      
         <Footer />
        

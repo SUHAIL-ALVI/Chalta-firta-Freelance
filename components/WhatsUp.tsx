@@ -12,7 +12,7 @@ export default function WhatsUp() {
   return (
     <section className="relative w-full justify-center content-center px-4 py-16 sm:py-20 overflow-hidden">
       {/* Background with gradient + texture */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-orange-50" />
+      <div className="absolute inset-0 bg-blue-50" />
       <div
         className="absolute inset-0 opacity-20"
         style={{
