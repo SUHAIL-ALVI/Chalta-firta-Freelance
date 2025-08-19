@@ -18,7 +18,7 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="relative  bg-gradient-to-b from-[#F37321] via-[#FF7C45] to-[#3B6BB0] text-gray-100">
+    <footer className="relative px-2 ml-4 mr-4 rounded-3xl bg-gradient-to-b from-[#F37321] via-[#FF7C45] to-[#3B6BB0] text-gray-100">
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to- from-[#F37321] via-[#FF7C45] to-[#3B6BB0] pointer-events-none" />
 
