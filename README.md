@@ -1,1 +1,1 @@
-GitHubLINK :- https://github.com/SUHAIL-ALVI/Chalta-firta-Freelance
+GitHubLIK :- https://github.com/SUHAIL-ALVI/Chalta-firta-Freelance
